@@ -1,0 +1,166 @@
+@media (min-width:992px) {
+
+    .section-title {
+        font-size: 3.4rem;
+    }
+
+
+    .section {
+        padding: 8em 0;
+    }
+
+
+    .btn-bars {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .header-img {
+        background-image: url(../../dist/img/levander-hq.jpg);
+
+        .header-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            z-index: 10;
+
+            .header-text {
+                padding: 0 1em;
+                text-align: left;
+            }
+
+
+            .title,
+            .text {
+                text-shadow: none;
+            }
+
+            .title {
+                font-size: 5rem;
+            }
+
+            .text {
+                font-size: 1.8rem;
+            }
+
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .2);
+            z-index: 5;
+        }
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .nav-desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+
+        .nav-link {
+            padding: 2em .5em;
+            font-size: 1.8rem;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color .2s linear;
+        }
+
+        .nav-link:hover {
+            color: #000;
+            background-color: #fff;
+        }
+    }
+
+    .types {
+
+        .cards {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            margin: 4em auto;
+            width: 25%;
+
+            .card-text {
+                height: 220px;
+            }
+        }
+
+        .btn-catalog {
+            margin-top: 2em;
+            background-color: $mainColor2;
+        }
+    }
+
+    .choose-us {
+
+        .cards {
+            padding: 5em 0;
+        }
+
+        .card {
+            width: 20%;
+
+        }
+    }
+
+    .order {
+
+        .wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .order-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 45%;
+            height: 500px;
+
+            .section-title {
+                padding-top: 0;
+                text-align: left;
+            }
+        }
+
+        .order-box-img {
+            height: 100%;
+        }
+    }
+
+    .about-us {
+
+        .about-us-box {
+            padding-top: 7em;
+            width: 40%;
+        }
+
+        .about-us-img {
+            padding: 0em;
+        }
+    }
+
+}

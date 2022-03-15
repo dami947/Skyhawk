@@ -1,0 +1,121 @@
+@media (min-width:768px) {
+
+    .section {
+        padding: 6em 0;
+    }
+
+    .types {
+
+        .cards {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            margin: 4em auto;
+            width: 40%;
+
+            .card-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 170px;
+            }
+        }
+    }
+
+    .choose-us {
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .card {
+            padding: 5em 1em;
+            width: 45%;
+
+            .card-body {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .section-title {
+            padding-top: 0em;
+            text-align: left;
+        }
+
+        .about-us-box {
+            padding-top: 5em;
+            width: 48%;
+        }
+
+        .text {
+            text-align: left;
+        }
+
+        .about-us-img {
+            padding: 0em 0em 0em 2em;
+        }
+
+    }
+
+    .opinions {
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 60%;
+
+            .btn-opinion {
+                font-size: 4rem;
+            }
+
+            .opnion-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .card-body {
+
+                .rating {
+                    font-size: 3rem;
+
+                }
+            }
+        }
+
+    }
+
+    .footer-section {
+        background-color: #444;
+
+        .nav-footer {
+            flex-direction: row;
+
+
+            .nav-link-footer {
+                padding: 2em;
+                font-size: 1.8rem;
+
+            }
+        }
+    }
+
+
+}
