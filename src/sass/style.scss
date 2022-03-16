@@ -1,4 +1,5 @@
 @import './colors';
+@import './mixins';
 
 *,
 ::before,
@@ -17,6 +18,9 @@ body {
     // font-family: 'Lora', serif;
 }
 
+.swiper {
+    width: 950px;
+}
 
 .sticky-body {
     overflow: hidden;
@@ -117,15 +121,12 @@ body {
 }
 
 .nav-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include dFlexColumnJccAic;
     position: fixed;
     transform: translateX(-103%);
     top: 0;
     left: 0;
-    width: 100%;
+    width: 75%;
     height: 100%;
     background-color: #fff;
     transition: transform .2s linear;
@@ -170,15 +171,11 @@ body {
     background-color: $sectionColor;
 
     .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include dFlexColumnAic;
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include dFlexColumnAic;
         margin: 4em 0;
         width: 80%;
 
@@ -229,9 +226,7 @@ body {
     }
 
     .btn-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dFlexJccAic;
     }
 
     .btn-catalog {
@@ -287,10 +282,7 @@ body {
     background-color: $mainColor;
 
     .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dFlexColumnJccAic;
     }
 
     .order-box {
@@ -355,9 +347,7 @@ body {
     background-color: $sectionColor;
 
     .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include dFlexJccAic;
         padding: 3em 1em;
 
         .btn-opinion {
@@ -381,9 +371,7 @@ body {
         }
 
         .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include dFlexColumnAic;
             padding: 0 5em;
             text-align: center;
 
@@ -410,10 +398,7 @@ body {
     }
 
     .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include dFlexColumnJccAic;
         padding: 5em 0;
 
         .form-control {
@@ -457,10 +442,8 @@ body {
     background-color: #444;
 
     .nav-footer {
-        display: flex;
-        flex-direction: column;
+        @include dFlexColumnAic;
         justify-content: space-between;
-        align-items: center;
         padding: 0 1em;
 
 
@@ -489,6 +472,7 @@ body {
 .footer {
     padding: 2em 0;
     text-align: center;
+    color: #fff;
     font-size: 1.4rem;
     background-color: #444;
     border-top: 1px solid #777;

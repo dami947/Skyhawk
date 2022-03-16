@@ -1,0 +1,22 @@
+@mixin dFlexColumnJccAic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin dFlexColumnAic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@mixin dFlexJccAic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
