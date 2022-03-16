@@ -3,6 +3,7 @@ const navAllLink = document.querySelectorAll('.nav-link')
 const navBtn = document.querySelector('.btn-bars');
 const allSections = document.querySelectorAll('.section');
 const footerYear = document.querySelector('.footer-year');
+const angleUp = document.querySelector('.angle-up');
 
 
 const handleNav = () => {
@@ -21,7 +22,14 @@ const handleObserver = () => {
             navBtn.classList.remove('black-color')
         }
     })
+
+    if (currentSection > 94) {
+        angleUp.classList.add('angle-up-active')
+    } else {
+        angleUp.classList.remove('angle-up-active')
+    }
 }
+
 
 
 const handleCurrentYear = () => {
